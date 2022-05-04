@@ -114,7 +114,7 @@ nav ul li a {
     display: grid;
     row-gap: 1em;
     column-gap: 1em;
-    min-height: 120vh;
+    min-height: 125vh;
     grid-template-rows: 1fr 1.5fr;
 }
 
@@ -217,22 +217,20 @@ nav ul li a {
 }
 
 .q1-box1 div:nth-child(5) {
-    /* pegagogy image container */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .q1-box1 div:nth-child(5)>img {
-    /* pedagogy image */
     max-width: 60%;
     max-height: 60%;
 }
 
 .q1-box2 div:first-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .q1-box2 div:first-child>img {
@@ -498,6 +496,96 @@ nav ul li a {
 /* SECTION FOUR */
 
 #q4 {
+    display: grid;
+    overflow: scroll;
+    height: 110vh;
+    width: 100vw;
+    background-color: black;
+    grid-template-rows: 2fr 1fr 2fr;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.q4-box1 {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr .9fr .8fr 3fr;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.q4-box1 div {
+    background-color: white;
+}
+
+.q4-box1>div:first-child {
+    background-color: red;
+}
+
+.q4-box1>div:nth-child(2) {
+    grid-column: 2/4;
+}
+
+.q4-box1>div:nth-child(3) {
+    background-color: yellow;
+    grid-column: 4 / 5;
+    grid-row: 1 / 3
+}
+
+.q4-box1>div:nth-child(4) {
+    grid-column: 1/3;
+}
+
+.q4-box1>div:nth-child(5) {
+    background-color:#002FA7;
+}
+
+.q4-box2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.q4-box2>div:first-child {
+    background-color: yellow;
+}
+
+.q4-box2>div:nth-child(2) {
+    background-color: white;
+}
+
+.q4-box2>div:last-child {
+    background-color:#002FA7;
+}
+
+.q4-box3 {
+    display: grid;
+    grid-template-columns: 3.04fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.q4-box3>div:first-child {
+    background-color: red;
+}
+
+.q4-box3>div:last-child {
+    background-color: white;
+}
+
+.q4-box1>div:nth-child(3), 
+.q4-box2>div:nth-child(2) {
+    /*text */
+    padding: 20px;
+    word-wrap: break-word;
+    overflow: auto;
+    font-size: 1.1em;
+}
+
+/* SECTION FIVE */
+
+#q5 {
     height: 110vh;
     width: 100vw;
     display: grid;
@@ -509,107 +597,36 @@ nav ul li a {
     row-gap: 1em;
 }
 
-#q4 div {
+#q5 div {
     background-color: white;
 }
 
-#q4>div:nth-child(2) {
+#q5 > div:nth-child(2) {
     background-color: red;
     grid-column: 2 /4;
     grid-row: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#q4>div:nth-child(4) {
+#q5 > div:nth-child(4) {
     background-color: #002FA7;
     grid-row: 3 / 5
 }
 
-#q4>div:nth-child(5) {
+#q5 > div:nth-child(5) {
     grid-row: 3 / 5;
 }
 
-#q4>div:nth-child(7) {
+#q5 > div:nth-child(7) {
     background-color: yellow;
 }
 
-
-/* SECTION FIVE */
-
-#q5 {
-    display: grid;
-    overflow: scroll;
-    height: 110vh;
-    width: 100vw;
-    background-color: black;
-    grid-template-rows: 2fr 1fr 2fr;
-    column-gap: 1em;
-    row-gap: 1em;
-}
-
-.q5-box1 {
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 1fr .9fr .8fr 3fr;
-    column-gap: 1em;
-    row-gap: 1em;
-}
-
-.q5-box1 div {
-    background-color: white;
-}
-
-.q5-box1>div:first-child {
-    background-color: red;
-}
-
-.q5-box1>div:nth-child(2) {
-    grid-column: 2/4;
-}
-
-.q5-box1>div:nth-child(3) {
-    background-color: yellow;
-    grid-column: 4 / 5;
-    grid-row: 1 / 3
-}
-
-.q5-box1>div:nth-child(4) {
-    grid-column: 1/3;
-}
-
-.q5-box1>div:nth-child(5) {
-    background-color: #002FA7;
-}
-
-.q5-box2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    column-gap: 1em;
-    row-gap: 1em;
-}
-
-.q5-box2>div:first-child {
-    background-color: yellow;
-}
-
-.q5-box2>div:nth-child(2) {
-    background-color: white;
-}
-
-.q5-box2>div:last-child {
-    background-color: #002FA7;
-}
-
-.q5-box3 {
-    display: grid;
-    grid-template-columns: 3.04fr 1fr;
-    column-gap: 1em;
-    row-gap: 1em;
-}
-
-.q5-box3>div:first-child {
-    background-color: red;
-}
-
-.q5-box3>div:last-child {
-    background-color: white;
+#q5>div:nth-child(odd) {
+    /*text */
+    padding: 20px;
+    word-wrap: break-word;
+    overflow: auto;
+    font-size: 1.1em;
 }
